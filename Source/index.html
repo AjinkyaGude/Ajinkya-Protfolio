@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+        <title>Ajinkya-Protfolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-quries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <script src="script.js"></script>
+
+        <nav id="nav-top">
+            <div class="logo"> AJINKYA GUDE </div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#About"> About</a></li>
+                    <li><a href="#Experience"> Experience</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects"> Projects</a></li>
+                    <li><a href="#Contact"> Contact</a></li>
+
+                </ul>
+                
+            </div>
+        </nav>
+
+        <nav id="ham-nav">
+            <div class="logo"> AJINKYA GUDE </div>
+            <div class="ham-menu">
+                <div class="ham-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="ham-menu-links">
+                    <li><a href="#About" onclick="toggleMenu()"> About</a></li>
+                    <li><a href="#Experience" onclick="toggleMenu()"> Experience</a></li>
+                    <li><a href="#Skills" onclick="toggleMenu()"> Skills</a></li>
+                    <li><a href="#Projects" onclick="toggleMenu()"> Projects</a></li>
+                    <li><a href="#Contact" onclick="toggleMenu()"> Contact</a></li>
+                </div>
+            </div>
+
+        </nav>
+
+        <section id="profile">
+            <div class="profile-pic-container">
+                <img src="./../Resource/PIC.jpg" alt="Ajinkya Gude Profile Picture" style="border-radius: 50%;">
+            </div>
+            <div class="section_text">
+                <p class="section_text_p1"> Hello I'm</p>
+                <h1 class="title"> Ajinkya Gude</h1>
+                <p class="section_text_p2">Cloud Engineer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" 
+                    onclick="window.open('./../Resource/WORKCV.pdf')"> Downlad CV
+                    </button>
+                    <button class="btn btn-color-1" 
+                    onclick="location.href='./#Contact'"> Contact
+                    </button>
+                </div>
+
+                <div id="social-container">
+                    <i class="fa-brands fa-linkedin fa-3x" onclick="location.href='https://www.linkedin.com/in/ajinkya-gude-312804183/'"></i>
+                    <i class="fa-brands fa-github fa-3x" onclick="location.href='https://github.com/AjinkyaGude'"></i>
+                </div>
+            </div>
+        </section>
+
+        <div style="background-color: beige; ">
+        <section id="About">
+            <p class="section_text_p1"> Get To Know More</p>
+            <h1 class="title"> About Me</h1>
+            
+            <div class="section-container">
+                <div class="section-pic-container">
+                    <img src="./../Resource/PIC2.jpg" alt="Profile Picture" class="about-pic" />
+                </div>
+                
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <i class="fa-solid fa-briefcase fa-2x"></i>
+                            <h3>Experience</h3>
+                            <p>2+ Years <br /> Cloud Engineer</p>
+                        </div>
+
+                        <div class="details-container">
+                            <i class="fa-solid fa-graduation-cap fa-2x"></i>
+                            <h3>Education</h3>
+                            <p>Bachlor of Engineering <br /> Electronics and Telecommunication</p>
+                        </div>
+                    </div>
+
+                    <div class="text-container">
+                        <p>I am a Laturkar which states that I come from the city of Latur, 
+                            Maharashtra. My city being relatively small has taught me about 
+                            how to achieve big with minimalistic requirements. I like to keep 
+                            myself updated with the latest technologies and technological 
+                            advances.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon arrow">
+                <i class="fa-solid fa-circle-arrow-down fa-4x" alt="Arrow Icon" onclick="location.href='./#Experience'"></i> 
+            </div>
+        </section>
+    </div>
+
+    <section id="Experience" style="margin-top: 5rem;">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title"> Experience's </h1>
+            <div style="margin-top: 5rem;">
+                <h2 class="experience-sub-title"> Cloud Engineer - Current </h2>
+                    <div class="article-container">
+                        <div class="article">
+                            <h1>LTIMindtree</h1>
+                            <h3>Designation - Engineer Cloud and Infra <br>
+                            Technologies - TIBCO, WAS, MQ, AWS</h3>
+                            <p>Work Experience - Trained in Cloud Middleware
+                            technologies. Worked on TIBCO project for 1+
+                            year and have professional experience in TIBCO
+                            BW, EMS, and IProcesses </p>
+                        </div>  
+                    </div>
+            </div>
+
+
+                <div style="margin-top:5rem;">
+                    <h2 class="experience-sub-title"> Web Development - Intern </h2>
+                        <div class="article-container">
+                            <div class="article">
+                                <h1>Exposys Data Labs</h1>
+                                <h3>Designation - Engineer Cloud and Infra <br>
+                                Technologies - HTML, CSS, Bootstrap</h3>
+                                <p>This internship taught me how to design a multipage
+                                responsive website using HTML and Bootstrap. I
+                                designed a website named R-JETT in this internship </p>
+                            </div>  
+                        </div>
+                </div>
+
+                <div class="icon arrow-exp">
+                    <i class="fa-solid fa-circle-arrow-down fa-4x" alt="Arrow Icon" onclick="location.href='./#Skills'"></i> 
+                </div>
+                
+    </section>
+
+    <!-- <section id="Projects">
+        <P class="section_text_p1"> Browse My Recent</P>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="">
+
+                </div>
+                <h2 class="experience-sub-title project-title"> Project One</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AjinkyaGude'"> Github </button>
+                </div>
+            </div>
+        </div>
+
+    </section> -->
+
+    <section id="Skills">
+        <p class="section_text_p1"> Explore My </p>
+        <h1 class="title"> Skills </h1>
+
+        <div class="skillsgroup">
+
+            <!-- <h2 class="section_text_p1" style="margin-top: 3rem;"> Programming</h2> -->
+
+                <div class="Middleware">
+                    <div class="skill-box">
+                    <span class="title-s"> C </span>
+                    
+                    <div class="skill-bar">
+                        <span class="skill-per c">
+                        <span class="tooltip">80%</span>
+                        </span>
+                    </div>
+                    </div>
+                    
+                    <div class="skill-box">
+                    <span class="title-s"> C++ </span>
+                    
+                    <div class="skill-bar">
+                        <span class="skill-per cpp">
+                        <span class="tooltip">80%</span>
+                        </span>
+                    </div>
+                    </div>
+                    
+                    <div class="skill-box">
+                    <span class="title-s">Java</span>
+                    
+                    <div class="skill-bar">
+                        <span class="skill-per java">
+                        <span class="tooltip">50%</span>
+                        </span>
+                    </div>
+                    </di
+                    <div class="skill-box">
+                        <span class="title-s">Linux</span>
+                        
+                        <div class="skill-bar">
+                            <span class="skill-per linux">
+                            <span class="tooltip">70%</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>    
+                
+
+            <!-- <h2 class="section_text_p1"> Web Devlopment</h2> -->
+
+                <div class="WebDevlopment">
+                    <div class="skill-box">
+                    <span class="title-s">HTML</span>
+                    
+                    <div class="skill-bar">
+                        <span class="skill-per html">
+                        <span class="tooltip">90%</span>
+                        </span>
+                    </div>
+                    </div>
+                    
+                    <div class="skill-box">
+                    <span class="title-s">CSS</span>
+                    
+                    <div class="skill-bar">
+                        <span class="skill-per css">
+                        <span class="tooltip">70%</span>
+                        </span>
+                    </div>
+                    </div>
+                    
+                    <div class="skill-box">
+                    <span class="title-s">JavaScript</span>
+                    
+                    <div class="skill-bar">
+                        <span class="skill-per js">
+                        <span class="tooltip">50%</span>
+                        </span>
+                    </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <span class="title-s">Bootstrap</span>
+                        
+                        <div class="skill-bar">
+                            <span class="skill-per node-boot">
+                            <span class="tooltip">80%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <span class="title-s">Tailwind</span>
+                        
+                        <div class="skill-bar">
+                            <span class="skill-per node-boot">
+                            <span class="tooltip">80%</span>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-box">
+                    <span class="title-s">Nuxt Js</span>
+                    
+                    <div class="skill-bar">
+                        <span class="skill-per nuxt-js">
+                        <span class="tooltip">50%</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <h2 class="section_text_p1" style="margin-top: 3rem;"> Middleware</h2> -->
+
+            <div class="Middleware">
+                <div class="skill-box">
+                <span class="title-s">IBM - TIBCO</span>
+                
+                <div class="skill-bar">
+                    <span class="skill-per tibco">
+                    <span class="tooltip">80%</span>
+                    </span>
+                </div>
+                </div>
+                
+                <div class="skill-box">
+                <span class="title-s">IBM - WAS</span>
+                
+                <div class="skill-bar">
+                    <span class="skill-per was">
+                    <span class="tooltip">60%</span>
+                    </span>
+                </div>
+                </div>
+                
+                <div class="skill-box">
+                <span class="title-s">IBM - MQ</span>
+                
+                <div class="skill-bar">
+                    <span class="skill-per js">
+                    <span class="tooltip">50%</span>
+                    </span>
+                </div>
+                </div>
+            </div>    
+        </div>
+
+        <div class="icon arrow-s">
+            <i class="fa-solid fa-circle-arrow-down fa-4x" alt="Arrow Icon" onclick="location.href='./#Contact'"></i> 
+        </div>
+
+    </section>
+
+    <section id="Contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <i class="fa-solid fa-envelope fa-2x"></i>
+            <p><a href="mailto:ajinkyagude@gmail.com">ajinkyagude@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+            <p><a href="https://www.linkedin.com/in/ajinkya-gude-312804183/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#Skills">Skills</a></li>
+              <li><a href="#Projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Ajinkya Gude. All Rights Reserved.</p>
+      </footer>
+
+</body> 
+</html>
