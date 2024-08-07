@@ -9,6 +9,11 @@
 
 body {
     font-family: "Poppins", sans-serif; 
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: auto;
 }
 
 html {
@@ -68,6 +73,7 @@ a:hover {
 
 #ham-nav {
     display: none;
+    position: absolute;
 }
 .ham-menu {
     position: relative;
@@ -549,26 +555,42 @@ article {
     text-align: center;
   }
 
+/* 
 
-  /* Responsive Site Code */
 
-  @media screen and (max-width:800px) {
+  @media (max-width:800px) {
 
-    /* #nav-top {
+     #nav-top {
         display: inline;
         position: relative;
         width: fit-content;
         padding: 10%;
 
-    } */
+    } 
 
+    body {     
+        width: auto;
+        height: auto;
+        margin: auto;
+        padding: auto;
+    }
+
+    .logo {
+        position: relative;
+    }
+
+    a {
+        font-size: 50%;
+    }
+
+ 
     .profile-pic-container {
         position: absolute;
-        display: flex;
-        height: 50vh;
-        width: 100vw;
+        display: none;
+         height: 50%;
+        width: 100%;
         left: 21vw;
-        top: 10vh;
+        top: 10vh; 
     }
 
     h1 {
@@ -576,17 +598,14 @@ article {
     }
 
     .section_text {
-
         position: relative;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        top: 60vh;
-        left: 15vw;
+        display: flexbox;
+        top: 10vh;
     }
 
     #profile {
-        display: inline-block;
+        display: flex;
+        position: relative;
         top: 10vh;
     }
 
@@ -602,30 +621,30 @@ article {
     }
 
     #section-container {
-        display: inline;
+        display: flex;
         position: relative;
         padding: 10%;
     }
 
-    #section_text_p1{
-        display: inline;
+    #section_text_p1 {
+        display: flex;
         position: relative;
         margin: 15px;
         padding: 10%;
    }
 
     #About {
-        display: inline-block;
+        display: flexbox;
         justify-content: center;
         align-items: center;
         position: relative;
-        top: 300px;
+        top: 20rem;
         
     }
 
     #Experience {
 
-        display: inline-block;
+        display: flexbox;
         justify-content: center;
         align-items: center;
         position: relative;
@@ -655,21 +674,29 @@ article {
     }
 
     #Skills  {
-        display: inline-block;
+        display: flexbox;
         justify-content: center;
         align-items: center;
         position: relative;
-        height: 100vh;
-        width: 100vw;
+
+        width: max-content;
+
     }
 
     #Contact {
-        display: inline-block;
+        display: flexbox;
         justify-content: center;
         align-items: center;
         position: relative;
+        
     }
     
+    .nav-top {
+        display: none;
+    }
 
-  }
-  
+    h2 {
+        font-size: 10px;
+    }
+
+  } */
