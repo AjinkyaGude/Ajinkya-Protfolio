@@ -43,9 +43,11 @@ nav {
 }
 
 .nav-links {
+    display: flex;
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+    margin-left: 10%;
 }
 
 a {
@@ -169,7 +171,7 @@ section {
 
 .profile-pic-container {
     display: flex;
-    height: 500px;
+    height: 60vh;
     width: 550px;
     margin:10vh;
     margin-right: 30vh;
@@ -511,6 +513,7 @@ article {
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    margin-top: 20dvh;
   }
   
   .contact-info-upper-container {
@@ -549,10 +552,12 @@ article {
   footer {
     height: 26vh;
     margin: 0 1rem;
+    margin-right: 15dvh;
   }
   
   footer p {
     text-align: center;
+    margin-left: 15dvh;
   }
 
 /* 
