@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #E0EAFC 0%, #CFDEF3 100%);
+    background: linear-gradient(135deg, #d1dcf3 100%, #a6bbd8 50%);
     color: #24292F;
     margin: 0;
     padding: 0;
@@ -59,7 +59,7 @@ section {
 
 .hero-content h1 {
     font-size: 3.2rem;
-    background: linear-gradient(90deg, #4FD1C5, #4299E1);
+    background: linear-gradient(90deg, #6fe7e1, #4299E1, #7c40ad);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
