@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #E0EAFC 0%, #CFDEF3 100%);
+    color: #24292F;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background: #1E2327;
+    color: #fff;
+    padding: 0 2rem;
+}
+
+.logo a {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+    color: #4FD1C5;
+}
+
+section {
+    padding: 80px 15px 40px 15px;
+    background: transparent;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    text-align: center;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    background: linear-gradient(90deg, #4FD1C5, #4299E1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-emphasis-color: transparent;
+    font-weight: 700;
+}
+
+.hero-bio {
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+    color: #353A47;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 24px rgba(79,209,197,0.30);
+}
+
+.btn-primary {
+    margin-top: 1.3rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    background: linear-gradient(90deg,#4FD1C5,#4299E1);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(79,209,197,0.10);
+    transition: background 0.2s;
+}
+.btn-primary:hover {
+    background: linear-gradient(90deg,#4299E1,#4FD1C5);
+}
+
+/* About Section */
+.about-content {
+    text-align: left;
+}
+.metrics {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.2lvh;
+}
+.metrics li {
+    background: #fff;
+    padding: 1em 1.5em;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(34,41,47,0.05);
+    color: #4299E1;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+}
+
+.timeline {
+    border-left: 4px solid #4FD1C5;
+    padding-left: 2rem;
+    margin-top: 2em;
+}
+.timeline-item {
+    margin-bottom: 2em;
+    display: flex;
+    gap: 1em;
+    align-items: flex-start;
+}
+.timeline-icon {
+    font-size: 1.5em;
+    color: #4FD1C5;
+}
+
+.skills-content {
+    margin-top: 2em;
+}
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.5em;
+}
+.skill-item {
+    background: #fff;
+    padding: 1.2em 2em;
+    border-radius: 24px;
+    box-shadow: 0 2px 8px rgba(79,209,197,0.07);
+    text-align: center;
+    width: 175px;
+}
+.skill-icon {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0.6em;
+}
+.progress-bar {
+    width: 100%;
+    background: #e5e7eb;
+    height: 7px;
+    border-radius: 7px;
+    margin-top: 0.7em;
+    overflow: hidden;
+}
+.progress {
+    background: linear-gradient(90deg,#4FD1C5,#4299E1);
+    height: 100%;
+    border-radius: 7px;
+}
+
+/* Contact Card */
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+}
+.contact-card a {
+    background: #fff;
+    padding: 1em 2em;
+    border-radius: 22px;
+    font-size: 1.1rem;
+    color: #353A47;
+    box-shadow: 0 2px 8px rgba(79,209,197,0.07);
+    text-decoration: none;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+}
+.contact-card a:hover {
+    background: linear-gradient(90deg,#a6dae9,#4f86d3);
+    color: #000000;
+}
+
+footer {
+    background: #353A47;
+    color: #fff;
+    padding: 16px 0;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2em;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 800px) {
+    .container {
+        padding: 0 10px;
+    }
+    .skill-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .metrics {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Subtle Animations */
+section, .skill-item, .timeline-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s, transform 0.6s;
+}
+section.visible, .skill-item.visible, .timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
